@@ -18,7 +18,7 @@ void truyvet(int n,int m,int w[],int f[][100]){
 	cout<<"max value: "<<f[n][m]<<endl;
 	int i = n, j = m;
 	while( i != 0){
-		if(f[i][i] != f[i-1][j]){
+		if(f[i][j] != f[i-1][j]){
 			cout<<i<<" ";
 			j = j - w[i];
 		}
